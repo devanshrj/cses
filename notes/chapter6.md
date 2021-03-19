@@ -88,7 +88,7 @@ for (int y = 1; y <= n; y++) {
 - Ex: Given a list of weights `[w1,w2,...,wn]`, determine all sums that can be constructed using the weights.
   - Focus on subproblems where we only use the first `k` weights to construct sums.
 - `possible(x,k) =true` if we can construct a sum `x` using the first `k` weights
-- Formala: `possible(x,k) = possible(x − wk,k − 1) or possible(x,k − 1)`
+- Formala: `possible(x,k) = possible(x − w[k],k − 1) or possible(x,k − 1)`
   - based on the fact that we can either use or not use the weight $w_k$ in the sum
 - $O(nm)$ (m is the total sum of weights) DP algorithm:
 ```cpp
