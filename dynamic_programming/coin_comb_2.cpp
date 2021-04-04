@@ -14,7 +14,6 @@ int main() {
         cin >> c[i];
     }
 
-    // count[i] stores count for element i 
     int dp[n+1][x+1];
     memset(dp, 0, sizeof(dp));
 
